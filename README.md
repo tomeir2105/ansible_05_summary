@@ -1,4 +1,4 @@
-# Ansible Playbook for Task 05 - Hello world example
+# Ansible Playbook - Task 05
 
 ## Overview
 - This project contains an Ansible playbook to manage remote servers. 
