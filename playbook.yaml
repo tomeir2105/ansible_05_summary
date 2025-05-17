@@ -18,18 +18,21 @@
       register: tmp_dir
 
   tasks:
+    # Copy the hello.sh script to the /tmp directory on the remote server
     - name: Copy hello.sh from the current directory to /tmp
       copy:
         src: ./hello.sh
         dest: /tmp/hello.sh
         mode: '0755'
       when: tmp_dir.stat.exists == true
-
+      
+    # Execute the hello.sh script on the remote server
     - name: Execute hello.sh script remotely
       shell: /tmp/hello.sh
       when: tmp_dir.stat.exists == true
       register: result
-
+      
+    # Display the output of the executed hello.sh script
     - name: Show the output of the hello.sh script
       debug:
         msg: "{{ result.stdout }}"
