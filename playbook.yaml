@@ -1,4 +1,10 @@
 ---
+######################################
+# Created by : Meir
+# Purpose : Ansible Summary Pratice 05
+# Date : 17/5/2025
+# Version : 1
+######################################
 - name: Copy and execute hello.sh on all servers
   hosts: all
   become: yes
