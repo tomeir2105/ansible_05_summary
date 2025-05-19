@@ -6,6 +6,14 @@
   directories.
 - The playbook is designed to be used across multiple servers, with detailed steps for setup and execution.
 
+# The Short way - 
+```bash
+curl -o run.sh https://raw.githubusercontent.com/tomeir2105/ansible_05_summary/main/first_install/run.sh
+chmod +x run.sh
+./run.sh
+```
+
+# The Long Long Way -
 ## Prerequisites
 - Before running the playbook, start the ansible docker, and clone this repo.
 ```bash
