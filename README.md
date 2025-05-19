@@ -17,8 +17,8 @@ chmod +x run.sh
 # The Long Long Way -
 ## Prerequisites
 - Before running the playbook, download extract and start the ansible dockers from :
-  https://gitlab.com/vaiolabs-io/ansible-shallow-dive/-/archive/main/ansible-shallow-dive-main.tar.gz
-  cd int the docker build script - 
+- https://gitlab.com/vaiolabs-io/ansible-shallow-dive/-/archive/main/ansible-shallow-dive-main.tar.gz
+- cd int the docker build script - 
 ```bash
 cd ./ansible-shallow-dive/99_misc/setup/docker
 docker compose up -d
