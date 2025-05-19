@@ -1,4 +1,10 @@
 #!/bin/bash
+######################################
+# Created by : Meir
+# Purpose : Ansible Summary Pratice 05
+# Date : 17/5/2025
+# Version : 1
+######################################
 set -e
 command_exists() { command -v "$1" &> /dev/null; }
 install_curl() { sudo apt-get update -y &> /dev/null; sudo apt-get install -y curl &> /dev/null; }
