@@ -6,7 +6,8 @@
   directories.
 - The playbook is designed to be used across multiple servers, with detailed steps for setup and execution.
 
-# The Short way - 
+# The Short way 
+(Includes downloading the ansible docker machines)
 ```bash
 curl -o run.sh https://raw.githubusercontent.com/tomeir2105/ansible_05_summary/main/first_install/run.sh
 chmod +x run.sh
@@ -15,8 +16,11 @@ chmod +x run.sh
 
 # The Long Long Way -
 ## Prerequisites
-- Before running the playbook, start the ansible docker, and clone this repo.
+- Before running the playbook, download extract and start the ansible dockers from :
+  https://gitlab.com/vaiolabs-io/ansible-shallow-dive/-/archive/main/ansible-shallow-dive-main.tar.gz
+  cd int the docker build script - 
 ```bash
+cd ./ansible-shallow-dive/99_misc/setup/docker
 docker compose up -d
 docker exec -it docker-ansible-host-1 /bin/bash
 git clone https://github.com/tomeir2105/ansible_05_summary.git
